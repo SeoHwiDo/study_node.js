@@ -6,19 +6,19 @@ var videos =
 [
  [
 	"png",
-	"media/Clannad/1/1.mp4"
+	"media/Clannad/1/01.mp4"
  ],
  [
 	"png",
-	"media/Clannad/1/2.mp4"
+	"media/Clannad/1/02.mp4"
  ],
  [
     "png",
-	"media/Clannad/1/3.mp4"
+	"media/Clannad/1/03.mp4"
  ],
  [
     "png",
-	"media/Clannad/1/4.mp4"
+	"media/Clannad/1/04.mp4"
  ]
  ];
 
