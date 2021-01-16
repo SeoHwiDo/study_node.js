@@ -7,12 +7,18 @@
 </head>
 <body>
     <h3>hello doctor</h3>
-    <!-- <img src="img/title.png" width="250" height="250"> -->
-    <video  controls width="288" poster="img/title.png" preload="auto">
-        <source src="media/KON/1/1.mp4" type="video/mp4">
-        <track kind="subtitles" src="media/KON/1/1.vtt" srclang="ko" lable="korean" default>
-            영상기능 미지원 브라우저
-      </video>
+    <div>
+        <span>로그인</span>
+ 
+        <form method='get' action='login_action.php'>
+                <p>ID: <input name="id" type="text"></p>
+                <p>PW: <input name="pw" type="password"></p>
+                <input type="submit" value="로그인">
+        </form>
+        <br />
+        <button id="join" onclick="location.href='./join.php'">회원가입</button>
+ 
+        </div>
      
 </body>
 </html>
