@@ -181,25 +181,24 @@ function update_properties() {
     }
 }
 
+
 var videos =
 [
  [
-	"http://media.w3.org/2010/05/sintel/poster.png",
-	"http://media.w3.org/2010/05/sintel/trailer.mp4",
-	"http://media.w3.org/2010/05/sintel/trailer.webm"
+	"png",
+	"media/Clannad/1/01.mp4"
  ],
  [
-	"http://media.w3.org/2010/05/bunny/poster.png",
-	"http://media.w3.org/2010/05/bunny/trailer.mp4"
+	"png",
+	"media/Clannad/1/02.mp4"
  ],
  [
-	"http://media.w3.org/2010/05/bunny/poster.png",
-	"http://media.w3.org/2010/05/bunny/movie.mp4"
+    "png",
+	"media/Clannad/1/03.mp4"
  ],
  [
-	"http://media.w3.org/2010/05/video/poster.png",
-	"http://media.w3.org/2010/05/video/movie_300.mp4",
-	"http://media.w3.org/2010/05/video/movie_300.webm"
+    "png",
+	"media/Clannad/1/04.mp4"
  ]
  ];
 
