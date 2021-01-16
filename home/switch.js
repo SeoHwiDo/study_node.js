@@ -26,7 +26,7 @@ function switchVideo(n) {
 	if (n >= videos.length) n = 0;
 
 	var mp4 = document.getElementById("mp4");
-	var parent = mp4.parentNode;
+	// var parent = mp4.parentNode;
 
 	// document._video.setAttribute("poster", videos[n][0]);
 	mp4.setAttribute("src", videos[n][1]);
