@@ -43,5 +43,5 @@ function switchVideo(n) {
     // }
     // document._video.width = 0;
     // document._video.height = 0;
-    document._video.load();
+    // document._video.load();
 }
