@@ -41,7 +41,7 @@ function switchVideo(n) {
 	//     	parent.removeChild(webm);
 	// 	}
     // }
-    document._video.width = 0;
-    document._video.height = 0;
+    // document._video.width = 0;
+    // document._video.height = 0;
     document._video.load();
 }
