@@ -95,6 +95,6 @@ var videos =
 
 function changeVid(n){
     var video = document.getElementById('video');
-	video.setAttribute("src", videos[n][1]);
+	video.setAttribute("src", videos[n][0]);
     video.load();
 }
