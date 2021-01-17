@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset='utf-8'>
   <title>HTML5 Video</title>
@@ -8,7 +8,7 @@
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <h1>HTML5 Video Events and API</h1>
+  <!-- <h1>HTML5 Video Events and API</h1>
 
   <p>This page demonstrates the new <a
   href='http://www.w3.org/TR/html5/embedded-content-0.html#the-video-element'>HTML5 video
@@ -17,7 +17,7 @@
   href='http://www.w3.org/TR/html5/embedded-content-0.html#mediaevents'>media events</a>. Play, pause, and seek in the entire
   video, change the volume, mute, change the playback rate (including
   going into negative values). See the effect on the video and on the
-  underlying events and properties.</p>
+  underlying events and properties.</p> -->
 
   <div>
     <video id='video'
@@ -43,7 +43,7 @@
       <p>Your user agent does not support the HTML5 Video element.</p>
     </video>
     <div id='buttons'>
-      <button onclick="getVideo().load()">load()</button>
+      <!-- <button onclick="getVideo().load()">load()</button>
       <button onclick="getVideo().play()">play()</button>
       <button onclick="getVideo().pause()">pause()</button><br>
       <button onclick="getVideo().currentTime+=10">currentTime+=10</button>
@@ -56,14 +56,14 @@
       <button onclick="getVideo().volume+=0.1">volume+=0.1</button>
       <button onclick="getVideo().volume-=0.1">volume-=0.1</button>
       <button onclick="getVideo().muted=true">muted=true</button>
-      <button onclick="getVideo().muted=false">muted=false</button><br>
-      <button onclick="switchVideo(0);">Sintel teaser</button>
-      <button onclick="switchVideo(1);">Bunny trailer</button>
-      <button onclick="switchVideo(2);">Bunny movie</button>
-      <button onclick="switchVideo(3);">Test movie</button>
+      <button onclick="getVideo().muted=false">muted=false</button><br> -->
+      <button onclick="switchVideo(0);">1화</button>
+      <button onclick="switchVideo(1);">2화</button>
+      <button onclick="switchVideo(2);">3화</button>
+      <button onclick="switchVideo(3);">4화</button>
     </div>
 
-    <table>
+    <!-- <table>
       <caption>Media Events</caption>
       <tbody id='events'>
       </tbody>
@@ -94,7 +94,7 @@
 	  <td id='m_texttracks' class='false'>?</td>
 	</tr>
       </tbody>
-    </table>
+    </table> -->
 
 <!--
   <div id='canPlayType'>
@@ -103,7 +103,7 @@
     -->
   </div>
 
-<h2>Limitations</h2>
+<!-- <h2>Limitations</h2>
 
   <ul>
     <li>Some events may be fired despite the lack of effect on the video itself,
@@ -120,7 +120,7 @@
 <p>
 Many, many thanks to the <a href='http://www.blender.org/blenderorg/blender-foundation/'>Blender
 Foundation</a> and the community around the <a href='http://www.blender.org/'>blender project</a>.
-</p>
+</p> -->
 
      </body>
 </html>
