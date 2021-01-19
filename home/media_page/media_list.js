@@ -1,4 +1,4 @@
-var videos =
+var clannad =
 [
  ["media/Clannad/1/01.mp4",
  "media/Clannad/1/02.mp4",
@@ -52,8 +52,49 @@ var videos =
  "media/Clannad/2/25.mp4"]
 ];
 
-function changeVid(n,m){
-    var video = document.getElementById('video');
-	video.setAttribute("src", videos[n][m]);
-    video.load();
-}
+var kon =
+[
+ [
+ "media/KON/1/01.mp4",
+ "media/KON/1/02.mp4",
+ "media/KON/1/03.mp4",
+ "media/KON/1/04.mp4",
+ "media/KON/1/05.mp4",
+ "media/KON/1/06.mp4",
+ "media/KON/1/07.mp4",
+ "media/KON/1/08.mp4",
+ "media/KON/1/09.mp4",
+ "media/KON/1/10.mp4",
+ "media/KON/1/11.mp4",
+ "media/KON/1/12.mp4",
+ "media/KON/1/13.mp4",
+ "media/KON/1/14.mp4"],
+ [
+ "media/KON/2/01.mp4",
+ "media/KON/2/02.mp4",
+ "media/KON/2/03.mp4",
+ "media/KON/2/04.mp4",
+ "media/KON/2/05.mp4",
+ "media/KON/2/06.mp4",
+ "media/KON/2/07.mp4",
+ "media/KON/2/08.mp4",
+ "media/KON/2/09.mp4",
+ "media/KON/2/10.mp4",
+ "media/KON/2/11.mp4",
+ "media/KON/2/12.mp4",
+ "media/KON/2/13.mp4",
+ "media/KON/2/14.mp4",
+ "media/KON/2/15.mp4",
+ "media/KON/2/16.mp4",
+ "media/KON/2/17.mp4",
+ "media/KON/2/18.mp4",
+ "media/KON/2/19.mp4",
+ "media/KON/2/20.mp4",
+ "media/KON/2/21.mp4",
+ "media/KON/2/22.mp4",
+ "media/KON/2/23.mp4",
+ "media/KON/2/24.mp4",
+ "media/KON/2/25.mp4",
+ "media/KON/2/24.mp4",
+ "media/KON/2/25.mp4"]
+];
