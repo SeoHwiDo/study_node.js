@@ -8,16 +8,20 @@ video {
   margin: auto;
   float: left;
 }
-button {
-  border: 1px solid white;
-  padding: 0; margin: 0;
-  width: 40px;
-  height: 20px;
-  top: 220px;
-  left: -420px;
-  position: relative;
-  background-color: gray;
-  margin: auto;
-  float: left;
+
+.btn-1{
+  position: fixed;
+    top: 50%;
+    left: 0;
 }
 
+.btn-2{
+  position: fixed;
+    top: 50%;
+    left: 20%;
+}
+
+button{
+  
+  width: 50px;
+}
