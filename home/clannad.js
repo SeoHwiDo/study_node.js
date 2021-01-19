@@ -48,7 +48,8 @@ var videos =
  "media/Clannad/2/21.mp4",
  "media/Clannad/2/22.mp4",
  "media/Clannad/2/23.mp4",
- "media/Clannad/2/24.mp4",]
+ "media/Clannad/2/24.mp4",
+ "media/Clannad/2/25.mp4"]
 ];
 
 function changeVid(n,m){
