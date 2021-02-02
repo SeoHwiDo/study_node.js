@@ -23,7 +23,7 @@
 
 <div class="container">
 
-	<h2 align="center">로그인</h2><hr>
+	<h2 >로그인</h2><hr>
 	<form class="form-horizontal" method="POST">
 		<div class="form-group" style="padding: 10px 10px 10px 10px;">
 			<label for="user_name">아이디:</label>
