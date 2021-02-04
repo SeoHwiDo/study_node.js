@@ -7,8 +7,10 @@
 </head>
 <body>
     <?php
+        while(true){
+            echo date('Y-m-d H:i:s')."<br>";
+        }
         
-        echo date('Y-m-d H:i:s')."<br>";
         
         $name="test<br>";
         echo "hello".$name."<br>"
