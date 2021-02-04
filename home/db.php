@@ -20,13 +20,13 @@
      
       if(is_null($id)){
         echo '<h1>Fail!</h1>';
+      
+      }else{
+        $jb_conn = mysqli_connect( '222.110.111.54:3307', 'root', 'password', 'usertbl' );
+        $jb_sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
+        mysqli_query( $jb_conn, $jb_sql );
+        echo '<h1>Success!</h1>';
       }
-      // }else{
-      //   $jb_conn = mysqli_connect( 'localhost', 'username', 'password', 'signup' );
-      //   $jb_sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
-      //   mysqli_query( $jb_conn, $jb_sql );
-      //   echo '<h1>Success!</h1>';
-      // }
     ?>
     <p>
       <a href="signup.php">signup</a>
