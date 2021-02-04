@@ -12,7 +12,7 @@
         echo $date;
         sleep(1);
            if($date=!date('Y-m-d H:i:s')){
-              echo substr($date);
+              echo substr($date,0,+15);
            }
        }
        
