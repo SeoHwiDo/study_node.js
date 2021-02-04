@@ -1,4 +1,5 @@
-home/media
-node_modules
-package-lock.json
-package.json
+*.sh
+*/img
+*/*/media
+protect.*
+*.out
