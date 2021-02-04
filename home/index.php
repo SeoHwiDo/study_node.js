@@ -7,8 +7,9 @@
 </head>
 <body>
     <?php
+        echo 
         while(true){
-            echo date('Y-m-d H:i:s')."<br>";
+            date('Y-m-d H:i:s')."<br>";
         }
         
         
