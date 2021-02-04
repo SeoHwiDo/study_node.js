@@ -11,7 +11,7 @@
         while(true){
             $date=date('Y-m-d H:i:s');
         }
-        echo $_GET[$date]
+        echo $date;
         
         
         $name="test<br>";
