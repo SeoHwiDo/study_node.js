@@ -7,7 +7,14 @@
 </head>
 <body>
     <?php
-       $date=date('Y-m-d H:i:s');
+       while(true){
+        $date=date('Y-m-d H:i:s');
+        echo $date;
+           if($date=!date('Y-m-d H:i:s')){
+              echo substr($date);
+           }
+       }
+       
         echo $date;
         
         
