@@ -8,6 +8,8 @@
 <body>
     <?php
         echo date('Y-m-d H:i:s');
+        $name="test";
+        echo "hello".$name
     ?>
 </body>
 </html>
