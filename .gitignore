@@ -3,3 +3,7 @@
 */*/media
 protect.*
 *.out
+node_modules
+media
+*.json
+/Game
