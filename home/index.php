@@ -7,10 +7,7 @@
 </head>
 <body>
     <?php
-       
-        while(true){
-            $date=date('Y-m-d H:i:s');
-        }
+       $date=date('Y-m-d H:i:s');
         echo $date;
         
         
