@@ -22,6 +22,8 @@
         <li><h3><a href="index.php?id=test3">test3</a></h3></li>
     </ol>
     <?php echo $_GET['id']; ?>
-
+    <form action="signup.php">
+        <input type="submit" value="회원가입"/>
+    </form>
 </body>
 </html>
