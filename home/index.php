@@ -10,6 +10,7 @@
        while(true){
         $date=date('Y-m-d H:i:s');
         echo $date;
+        sleep(1);
            if($date=!date('Y-m-d H:i:s')){
               echo substr($date);
            }
