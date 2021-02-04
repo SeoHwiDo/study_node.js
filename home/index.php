@@ -7,10 +7,11 @@
 </head>
 <body>
     <?php
-        echo 
+       
         while(true){
-            date('Y-m-d H:i:s')."<br>";
+            $date=date('Y-m-d H:i:s');
         }
+        echo $_GET[$date]
         
         
         $name="test<br>";
