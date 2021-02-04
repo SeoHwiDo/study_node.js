@@ -17,6 +17,12 @@
       $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
       $mail = $_POST[ 'mail' ];
+      $test=1;
+      if($test>0){
+        echo 'point2';
+      }else{
+        echo 'point3';
+      }
       if ( is_null( $id ) ) {
         echo '<h1>Fail!</h1>';
       } else {
