@@ -12,6 +12,7 @@
   </head>
   <body>
     <?php
+      echo 'point1';
       $id = $_POST[ 'id' ];
       $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
