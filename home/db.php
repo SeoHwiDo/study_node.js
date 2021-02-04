@@ -18,6 +18,7 @@
       $age = $_POST[ 'age' ];
       $mail = $_POST[ 'mail' ];
       $test=1;
+      echo $id;
       if(is_null($test)){
         echo 'point2';
       }else{
