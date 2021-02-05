@@ -23,9 +23,15 @@
       
       }else{
         $conn = mysqli_connect( '172.30.1.30', 'root', 'password', 'userdb','3307' );
+        if (mysqli_connect_errno($con)){
+          echo "DB 연결 실패:" . mysqli_connect_error(); 
+      }else{
         $sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
         mysqli_query( $conn, $sql );
         echo '<h1>Success!</h1>';
+      }
+  
+       
       }
     ?>
     <p>
