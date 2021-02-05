@@ -17,7 +17,6 @@
       $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
       $mail = $_POST[ 'mail' ];
-     require 'hostinfo.php';
       // mysqli_connect_errno($mysqli)
       // $mysqli
       if(is_null($id)){
