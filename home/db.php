@@ -22,8 +22,8 @@
         echo '<h1>Fail!</h1>';
       
       }else{
-        $conn = mysqli_connect( '222.110.111.54', 'geoni24', 'password', 'userdb','3307' );
-        if (mysqli_connect_errno($con)){
+        $conn = mysqli_connect( '222.110.111.54', 'geoni24', 'password', 'geoni24','14103' );
+        if (mysqli_connect_errno($conn)){
           echo "DB 연결 실패:" . mysqli_connect_error(); 
       }else{
         $sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
