@@ -22,7 +22,7 @@
         echo '<h1>Fail!</h1>';
       
       }else{
-        $conn = mysqli_connect( '222.110.111.54', 'root', 'password', 'userdb','3307' );
+        $conn = mysqli_connect( '172.30.1.30', 'root', 'password', 'userdb','3307' );
         $sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
         mysqli_query( $conn, $sql );
         echo '<h1>Success!</h1>';
