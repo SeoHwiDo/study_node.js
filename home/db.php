@@ -22,9 +22,9 @@
         echo '<h1>Fail!</h1>';
       
       }else{
-        $jb_conn = mysqli_connect( '222.110.111.54', 'root', 'password', 'usertbl','3307' );
-        $jb_sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
-        mysqli_query( $jb_conn, $jb_sql );
+        $conn = mysqli_connect( '222.110.111.54', 'root', 'password', 'userdb','3307' );
+        $sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
+        mysqli_query( $conn, $sql );
         echo '<h1>Success!</h1>';
       }
     ?>
