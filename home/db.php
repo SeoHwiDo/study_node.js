@@ -19,13 +19,13 @@
       $mail = $_POST[ 'mail' ];
       
       // mysqli_connect_errno($mysqli)
-      // $mysqli
+      // 
       if(is_null($id)){
         echo '<h1>Fail!</h1>';
       
       }else{
         require 'hostinfo.php';
-        if (mysqli_connect_errno($mysqli)){
+        if (!$mysqli){
           echo "DB 연결 실패:" . mysqli_connect_error(); 
       }else{
         $sql = "INSERT INTO userList ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
