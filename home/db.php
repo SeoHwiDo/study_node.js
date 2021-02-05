@@ -25,8 +25,8 @@
       
       }else{
         require 'hostinfo.php';
-        if (!$mysqli){
-          echo "DB 연결 실패:" . mysqli_connect_error(); 
+        if ($mysqli->connect_errno){
+          die('Connect Error: ' . $mysqli->connect_errno);
       }else{
         $sql = "INSERT INTO userList ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
         mysqli_query( $conn, $sql );
