@@ -8,14 +8,14 @@
 <body>
 
 <?php
-
-$conn = mysqli_connect('222.110.111.54', 'geoni24', 'pass','geoni24','14103');
-if(!$conn){
-    echo "연결 실패";
-}else{
-    echo "연결 성공";
-}
+$host = '222.110.111.54';
+$user = 'geoni24';
+$pw = '';
+$dbName = 'geoni24';
+$port = '14103';
+$mysqli = new mysqli($host, $user, $pw, $dbName, $port);
 ?>
+
 
 </body>
 </html>
