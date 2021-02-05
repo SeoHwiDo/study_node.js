@@ -17,13 +17,7 @@
       $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
       $mail = $_POST[ 'mail' ];
-
-      $host = '222.110.111.54';
-      $user = 'geoni24';
-      $pw = '';
-      $dbName = 'geoni24';
-      $port = '14103';
-     
+     require 'hostinfo.php';
       // mysqli_connect_errno($mysqli)
       // $mysqli
       if(is_null($id)){
@@ -31,10 +25,10 @@
       
       }else{
         $mysqli = new mysqli($host, $user, $pw, $dbName, $port);
-        if (!$mysqli){
+        if (mysqli_connect_errno($mysqli)){
           echo "DB 연결 실패:" . mysqli_connect_error(); 
       }else{
-        $sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
+        $sql = "INSERT INTO userList ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
         mysqli_query( $conn, $sql );
         echo '<h1>Success!</h1>';
       }
