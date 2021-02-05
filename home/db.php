@@ -12,17 +12,23 @@
   </head>
   <body>
     <?php
-      echo 'point1';
+     
       $id = $_POST[ 'id' ];
       $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
       $mail = $_POST[ 'mail' ];
+
+      $host = '222.110.111.54';
+      $user = 'geoni24';
+      $pw = '';
+      $dbName = 'geoni24';
+      $port = '14103';
      
       if(is_null($id)){
         echo '<h1>Fail!</h1>';
       
       }else{
-        $conn = mysqli_connect( '222.110.111.54', 'geoni24', 'password', 'geoni24','14103' );
+        $mysqli = new mysqli($host, $user, $pw, $dbName, $port);
         if (mysqli_connect_errno($conn)){
           echo "DB 연결 실패:" . mysqli_connect_error(); 
       }else{
