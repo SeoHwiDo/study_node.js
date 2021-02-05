@@ -29,7 +29,7 @@
       
       }else{
         $mysqli = new mysqli($host, $user, $pw, $dbName, $port);
-        if (mysqli_connect_errno($conn)){
+        if (mysqli_connect_errno($mysqli)){
           echo "DB 연결 실패:" . mysqli_connect_error(); 
       }else{
         $sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
