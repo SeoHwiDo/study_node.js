@@ -13,7 +13,7 @@ $user = 'geoni24';
 $pw = '';
 $dbName = 'geoni24';
 $port = '14103';
-$mysqli = new mysqli($host, $user, $pw, $dbName, $port);\
+$mysqli = new mysqli($host, $user, $pw, $dbName, $port);
 if($mysqli){
     echo "MySQL 접속 성공";
 }else{
