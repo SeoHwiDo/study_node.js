@@ -6,12 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-test1
+
 <?php
 
-$conn = mysqli_connect('222.110.111.54', 'root', 'pass','14103')
-
+$conn = mysqli_connect('222.110.111.54', 'geoni24', 'pass','geoni24','14103');
+if(!$conn){
+    echo "연결 실패";
+}else{
+    echo "연결 성공";
+}
 ?>
-test2
+
 </body>
 </html>

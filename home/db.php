@@ -22,7 +22,7 @@
         echo '<h1>Fail!</h1>';
       
       }else{
-        $conn = mysqli_connect( '172.30.1.30', 'root', 'password', 'userdb','3307' );
+        $conn = mysqli_connect( '222.110.111.54', 'geoni24', 'password', 'userdb','3307' );
         if (mysqli_connect_errno($con)){
           echo "DB 연결 실패:" . mysqli_connect_error(); 
       }else{
