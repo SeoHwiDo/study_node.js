@@ -24,12 +24,14 @@
       $dbName = 'geoni24';
       $port = '14103';
      
+      // mysqli_connect_errno($mysqli)
+      // $mysqli
       if(is_null($id)){
         echo '<h1>Fail!</h1>';
       
       }else{
         $mysqli = new mysqli($host, $user, $pw, $dbName, $port);
-        if (mysqli_connect_errno($mysqli)){
+        if (!$mysqli){
           echo "DB 연결 실패:" . mysqli_connect_error(); 
       }else{
         $sql = "INSERT INTO usertbl ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
