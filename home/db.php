@@ -17,13 +17,14 @@
       $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
       $mail = $_POST[ 'mail' ];
+      
       // mysqli_connect_errno($mysqli)
       // $mysqli
       if(is_null($id)){
         echo '<h1>Fail!</h1>';
       
       }else{
-        $mysqli = new mysqli($host, $user, $pw, $dbName, $port);
+        require 'hostinfo.php';
         if (mysqli_connect_errno($mysqli)){
           echo "DB 연결 실패:" . mysqli_connect_error(); 
       }else{
