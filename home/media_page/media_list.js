@@ -98,3 +98,37 @@ var kon =
  "media/KON/2/24.mp4",
  "media/KON/2/25.mp4"]
 ];
+
+var haruhi =[
+    [
+    "media/haruhi/main/01.mkv",
+    "media/haruhi/main/02.mkv",
+    "media/haruhi/main/03.mkv",
+    "media/haruhi/main/04.mkv",
+    "media/haruhi/main/05.mkv",
+    "media/haruhi/main/06.mkv",
+    "media/haruhi/main/07.mkv",
+    "media/haruhi/main/08.mkv",
+    "media/haruhi/main/09.mkv",
+    "media/haruhi/main/10.mkv",
+    "media/haruhi/main/11.mkv",
+    "media/haruhi/main/12.mkv",
+    "media/haruhi/main/13.mkv",
+    "media/haruhi/main/14.mkv",
+    "media/haruhi/main/15.mkv",
+    "media/haruhi/main/16.mkv",
+    "media/haruhi/main/17.mkv",
+    "media/haruhi/main/18.mkv",
+    "media/haruhi/main/19.mkv",
+    "media/haruhi/main/20.mkv",
+    "media/haruhi/main/21.mkv",
+    "media/haruhi/main/22.mkv",
+    "media/haruhi/main/23.mkv",
+    "media/haruhi/main/24.mkv",
+    "media/haruhi/main/25.mkv",
+    "media/haruhi/main/24.mkv",
+    "media/haruhi/main/25.mkv",
+    "media/haruhi/main/26.mkv",
+    "media/haruhi/main/27.mkv",
+    "media/haruhi/main/28.mkv"]
+];
