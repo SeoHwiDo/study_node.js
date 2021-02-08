@@ -21,6 +21,11 @@ video {
     left: 300px;
 }
 
+.btn-3{
+  position: absolute;
+    top: 350px;
+    left: 500px;
+}
 button{
   
   width: 50px;

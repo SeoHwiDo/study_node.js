@@ -186,13 +186,11 @@ var eva =[
     "media/EVA/TVA/25.avi",
     "media/EVA/TVA/24.avi",
     "media/EVA/TVA/25.avi",
-    "media/EVA/TVA/26.avi",
-    "media/EVA/TVA/27.avi",
-    "media/EVA/TVA/28.avi"],
+    "media/EVA/TVA/26.avi"],
     [
-    "media/EVA/Movie/01.mkv",
-    "media/EVA/Movie/02.mkv",
-    "media/EVA/Movie/03.mkv"],
+    "media/EVA/Movie/1.mkv",
+    "media/EVA/Movie/2.mkv",
+    "media/EVA/Movie/3.mkv"],
     [
     "media/EVA/EOE/EOE.mp4",]
 
