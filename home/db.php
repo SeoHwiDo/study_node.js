@@ -32,6 +32,7 @@
         $sql = "INSERT INTO userList ( userID, pass, age, phone ) VALUES ( '$userID', '$pass', '$age', '$phone' );";
         mysqli_query( $mysqli, $sql );
         echo '<h1>Success!</h1>';
+        echo $pass;
       }
   
        
