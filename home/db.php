@@ -13,14 +13,14 @@
   <body>
     <?php
      
-      $id = $_POST[ 'id' ];
+      $userID = $_POST[ 'userID' ];
       $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
-      $mail = $_POST[ 'mail' ];
+      $phone = $_POST[ 'phone' ];
       
       // mysqli_connect_errno($mysqli)
       // 
-      if(is_null($id)){
+      if(is_null($userID)){
         echo '<h1>Fail!</h1>';
       
       }else{
@@ -28,7 +28,7 @@
         if ($mysqli->connect_errno){
           die('Connect Error: ' . $mysqli->connect_errno);
       }else{
-        $sql = "INSERT INTO userList ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail' );";
+        $sql = "INSERT INTO userList ( userID, pass, age, phone ) VALUES ( '$userID', '$pass', '$age', '$phone' );";
         mysqli_query( $mysqli, $sql );
         echo '<h1>Success!</h1>';
       }
