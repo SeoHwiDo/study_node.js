@@ -12,11 +12,10 @@
   </head>
   <body>
     <?php
-      require 'hostinfo.php';
-      require 'pass.php';
+      //require 'pass.php';
 
       $userID = $_POST[ 'userID' ];
-      $pass = $encryPass;
+      $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
       $phone = $_POST[ 'phone' ];
       
@@ -26,13 +25,13 @@
         echo '<h1>Fail!</h1>';
       
       }else{
-        if ($mysqli->connect_errno){
+       
+	 if ($mysqli->connect_errno){
           die('Connect Error: ' . $mysqli->connect_errno);
-      }else{
-        $sql = "INSERT INTO userList ( userID, pass, age, phone ) VALUES ( '$userID', '$pass', '$age', '$phone' );";
-        mysqli_query( $mysqli, $sql );
-        echo '<h1>Success!</h1>';
-        echo $pass;
+     	 }else{
+       	   $sql = "INSERT INTO userList ( userID, pass, age, phone ) VALUES ( '$userID', '$pass', '$age', '$phone' );";
+       	   mysqli_query( $mysqli, $sql );
+           echo '<h1>Success!</h1>';
       }
   
        

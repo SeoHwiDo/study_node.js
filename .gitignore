@@ -8,3 +8,6 @@ media
 *.json
 */Game
 server/home/hostinfo.*
+/Game
+home/hostinfo.php
+hostinfo.php
