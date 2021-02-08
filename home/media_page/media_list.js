@@ -201,5 +201,21 @@ var eva =[
     "media/EVA/Movie/3.mkv"],
     [
     "media/EVA/EOE/EOE.mp4",]
+];
 
+var plamemo =[
+    [
+    "media/PlaMemo/01.avi",
+    "media/PlaMemo/02.avi",
+    "media/PlaMemo/03.avi",
+    "media/PlaMemo/04.avi",
+    "media/PlaMemo/05.avi",
+    "media/PlaMemo/06.avi",
+    "media/PlaMemo/07.avi",
+    "media/PlaMemo/08.avi",
+    "media/PlaMemo/09.avi",
+    "media/PlaMemo/10.avi",
+    "media/PlaMemo/11.avi",
+    "media/PlaMemo/12.avi",
+    "media/PlaMemo/13.avi"]
 ];
