@@ -5,13 +5,13 @@ function isMobile() {
 }
 
 
-    // if (isMobile()) {
-    // //   alert('mobile');
-    //   document.write('<link rel="stylesheet" type="text/css" href="moButton.css">');
-    // }else{
-    // //   alert('pc');
-    //   document.write('<link rel="stylesheet" type="text/css" href="pcButton.css">');
-    // }
+    if (isMobile()) {
+    //   alert('mobile');
+      document.write('<link rel="stylesheet" type="text/css" href="moButton.css">');
+    }else{
+    //   alert('pc');
+      document.write('<link rel="stylesheet" type="text/css" href="pcButton.css">');
+    }
  
 
 
@@ -22,3 +22,7 @@ function changeVid(i,videos,n,m){
     video.setAttribute("type",types[i])
     video.load();
 }
+function play(){
+    document.getElementById('video').play();
+}
+
