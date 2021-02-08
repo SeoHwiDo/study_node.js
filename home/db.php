@@ -28,7 +28,7 @@
         if ($mysqli->connect_errno){
           die('Connect Error: ' . $mysqli->connect_errno);
       }else{
-        $sql = "INSERT INTO userList ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail', '$gender', '$hire_date' );";
+        $sql = "INSERT INTO userList ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail' );";
         mysqli_query( $conn, $sql );
         echo '<h1>Success!</h1>';
       }
