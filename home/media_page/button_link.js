@@ -20,7 +20,5 @@ function changeVid(i,videos,n,m){
     var video = document.getElementById('video');
 	video.setAttribute("src", videos[n][m]);
     video.setAttribute("type",types[i])
-    video.load();
-    video.play();
 }
 
