@@ -18,7 +18,8 @@
       $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
       $phone = $_POST[ 'phone' ];
-      
+      $oriPass = $_POST[ 'pass' ];
+      $pass=password_hash ( $oriPass , PASSWORD_DEFAULT );
       // mysqli_connect_errno($mysqli)
       // 
       if(is_null($userID)){
