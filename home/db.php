@@ -12,9 +12,11 @@
   </head>
   <body>
     <?php
-     
+      require 'hostinfo.php';
+      require 'pass.php';
+
       $userID = $_POST[ 'userID' ];
-      $pass = $_POST[ 'pass' ];
+      $pass = $encryPass;
       $age = $_POST[ 'age' ];
       $phone = $_POST[ 'phone' ];
       
@@ -24,7 +26,6 @@
         echo '<h1>Fail!</h1>';
       
       }else{
-        require 'hostinfo.php';
         if ($mysqli->connect_errno){
           die('Connect Error: ' . $mysqli->connect_errno);
       }else{
