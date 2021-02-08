@@ -11,7 +11,17 @@
       overflow: "scroll";
     }
   </style>
-  
+  <script>
+    function playVid() {
+        var video1 = document.querySelector('video');
+        video1.addEventListener('click',function() {
+            this.play();
+        },false);
+    }
+    window.onload = playVid;
+    </script>
+    
+   
   
 </head>
 
@@ -25,8 +35,6 @@
       <p>Your user agent does not support the HTML5 Video element.</p>
     </video>
     <br><br>
-  </div>
-
   <div class="btn-1">
     1기<br>
     <button onclick="changeVid(0,clannad,0,0);">1화</button>
