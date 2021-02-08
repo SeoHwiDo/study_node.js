@@ -6,5 +6,5 @@ protect.*
 node_modules
 media
 *.json
-/Game
-home/hostinfo.php
+*/Game
+*/hostinfo.*
