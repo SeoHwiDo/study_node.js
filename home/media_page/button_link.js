@@ -5,13 +5,13 @@ function isMobile() {
 }
 
 
-    if (isMobile()) {
-    //   alert('mobile');
-      document.write('<link rel="stylesheet" type="text/css" href="moButton.css">');
-    }else{
-    //   alert('pc');
-      document.write('<link rel="stylesheet" type="text/css" href="pcButton.css">');
-    }
+    // if (isMobile()) {
+    // //   alert('mobile');
+    //   document.write('<link rel="stylesheet" type="text/css" href="moButton.css">');
+    // }else{
+    // //   alert('pc');
+    //   document.write('<link rel="stylesheet" type="text/css" href="pcButton.css">');
+    // }
  
 
 
