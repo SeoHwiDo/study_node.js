@@ -29,7 +29,7 @@
           die('Connect Error: ' . $mysqli->connect_errno);
       }else{
         $sql = "INSERT INTO userList ( id, pass, age, mail ) VALUES ( '$id', '$pass', '$age', '$mail' );";
-        mysqli_query( $conn, $sql );
+        mysqli_query( $mysqli, $sql );
         echo '<h1>Success!</h1>';
       }
   
