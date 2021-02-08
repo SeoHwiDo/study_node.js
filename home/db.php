@@ -25,7 +25,7 @@
         echo '<h1>Fail!</h1>';
       
       }else{
-       
+        require 'hostinfo.php';
 	 if ($mysqli->connect_errno){
           die('Connect Error: ' . $mysqli->connect_errno);
      	 }else{
