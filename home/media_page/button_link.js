@@ -8,6 +8,8 @@ function isMobile() {
     if (isMobile()) {
     //   alert('mobile');
       document.write('<link rel="stylesheet" type="text/css" href="moButton.css">');
+      //document.write('<div class="control"><button onclick="video.play()">재생 안될시 클릭</button></div>');
+      
     }else{
     //   alert('pc');
       document.write('<link rel="stylesheet" type="text/css" href="pcButton.css">');
