@@ -21,5 +21,6 @@ function changeVid(i,videos,n,m){
 	video.setAttribute("src", videos[n][m]);
     video.setAttribute("type",types[i])
     video.load();
+    video.play();
 }
 
