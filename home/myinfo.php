@@ -20,6 +20,7 @@
         document.getElementById("permit").innerHTML="<?=$row['permit']?>"; 
     } 
 </script> 
+infoPrint();
 <div id='info'>
     <div id='userID'></div>
     <div id='age'></div>
