@@ -24,10 +24,10 @@
         $permit[1]='일반 이용자';
         $permit[2]='부관리자';
         $permit[3]='관리자';
-        echo 'ID:'.$id.'\n';
-        echo '나이:'.$age.'\n';
-        echo '전화:'.$phone.'\n';
-        echo '권한:'.$permit[$per];
+        echo 'ID:'.$id.'<br>';
+        echo '나이:'.$age.'<br>';
+        echo '전화:'.$phone.'<br>';
+        echo '권한:'.$permit[$per].'<br>';
     }else{
 ?>
 <script>
