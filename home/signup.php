@@ -39,7 +39,7 @@
       }
     ?>
     <p>
-      <a href="signup.php">signup</a>
+      <a href="index.html">signup</a>
      </p>
   </body>
 </html>
