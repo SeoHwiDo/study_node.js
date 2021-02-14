@@ -15,7 +15,7 @@
         $row['userID'];
 
         foreach($row as $key => $r){
-        echo "{$key} : {$r} <br>";
+        // echo "{$key} : {$r} <br>";
         }
  
         $passwordResult = password_verify($logPass, $hashedPassword);
