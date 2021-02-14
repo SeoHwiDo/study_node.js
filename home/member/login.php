@@ -23,7 +23,7 @@
 ?>      
         <script>
           alert("로그인에 성공하였습니다.")
-          location.href = "media_page/media_index.html";
+          location.href = "index.php";
         </script>
 <?php
       }
