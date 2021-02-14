@@ -27,7 +27,7 @@
     </center>
 </div>
 <div id='navigate'>
-    <button onclick="permitLink('member/myinfo.php')">내정보</button>
+    <button onclick="permitLink('myinfo.php')">내정보</button>
     <button onclick="permitLink('media_page/media_index.php')">영상</button>
     <button onclick="permitLink('board.php')">게시판</button>
     <button onclick="permitLink('Game/game_index.php')">게임</button>
