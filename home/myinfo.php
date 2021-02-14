@@ -26,6 +26,13 @@
     <div id='permit'></div>
 </div>
 <?php 
+    }else{
+?>
+<script>
+alert('로그인 후 확인');
+history.back();
+</script>
+<?php
     }
 ?>
 </body>
