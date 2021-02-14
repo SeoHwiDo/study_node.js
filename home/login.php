@@ -24,8 +24,8 @@
         // 세션에 id 저장
         session_start();
         $_SESSION['userID'] = $row['userID'];
-        print_r($_SESSION);
-        echo $_SESSION['userID'];
+        // print_r($_SESSION);
+        // echo $_SESSION['userID'];
     
 ?>
         <script>
