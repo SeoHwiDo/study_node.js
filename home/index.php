@@ -16,7 +16,7 @@
     }
     else {
 ?>          
-        <button onclick="location.href='member/login.html'">
+        <button onclick="location.href='login.html'">
         로그인</button><br/>
 <?php   
     }
