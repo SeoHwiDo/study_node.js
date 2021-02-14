@@ -10,7 +10,7 @@ function isMobile() {
       document.write('<link rel="stylesheet" type="text/css" href="moButton.css">');
       document.write('<div>'+
       '<video id="video" controls preload="none" width="500" height="250">'+
-        '<source src="media/clannad/1/01.mp4" type="video/mp4">'+
+        '<source type="video/mp4">'+
         '<p>Your user agent does not support the HTML5 Video element.</p>'+
       '</video><br><br></div>');
       document.write('<div class="control"><button onclick="video.play()">재생 안될시 클릭</button></div>');
@@ -20,7 +20,7 @@ function isMobile() {
       document.write('<link rel="stylesheet" type="text/css" href="pcButton.css">');
       document.write('<div>'+
       '<video id="video" controls preload="none" width="500" height="250">'+
-        '<source src="media/clannad/1/01.mp4" type="video/mp4">'+
+        '<source type="video/mp4">'+
         '<p>Your user agent does not support the HTML5 Video element.</p>'+
       '</video><br><br></div>');
     }

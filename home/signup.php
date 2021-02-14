@@ -2,7 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Add Employee</title>
+    <title>singup_ok</title>
     <style>
       body {
         font-family: Consolas, monospace;
@@ -11,13 +11,35 @@
     </style>
   </head>
   <body>
-    <h1>회원가입</h1>
-    <form action="db.php" method="POST">
-  <p><input type="text"   name=userID placeholder="아이디" required></p>
-  <p><input type="password" name=pass placeholder="비밀번호" required></p>
-  <p><input type="text" name=age placeholder="나이"  required></p>
-  <p><input type="text"   name=phone placeholder="전화번호" required></p>
-  <button>ADD</button>
-</form>
+    <?php
+      //require 'pass.php';
+
+      $userID = $_POST[ 'userID' ];
+      $pass = $_POST[ 'pass' ];
+      $age = $_POST[ 'age' ];
+      $phone = $_POST[ 'phone' ];
+      $oriPass = $_POST[ 'pass' ];
+      $pass=password_hash ( $oriPass , PASSWORD_DEFAULT );
+      // mysqli_connect_errno($mysqli)
+      // 
+      if(is_null($userID)){
+        echo '<h1>Fail!</h1>';
+      
+      }else{
+        require 'hostinfo.php';
+	 if ($mysqli->connect_errno){
+          die('Connect Error: ' . $mysqli->connect_errno);
+     	 }else{
+       	   $sql = "INSERT INTO userList ( userID, pass, age, phone ) VALUES ( '$userID', '$pass', '$age', '$phone' );";
+       	   mysqli_query( $mysqli, $sql );
+           echo '<h1>Success!</h1>';
+      }
+  
+       
+      }
+    ?>
+    <p>
+      <a href="signup.php">signup</a>
+     </p>
   </body>
 </html>
