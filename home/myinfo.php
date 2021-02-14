@@ -12,13 +12,11 @@
     
     if(isset($_SESSION['userid'])) {  
 ?>
-<script> 
-    function infoPrint(){ 
+<script>  
         document.write(<?=$row['userID']?>); 
         document.write(<?=$row['age']?>   ); 
         document.write(<?=$row['phone']?> ); 
         document.write(<?=$row['permit']?>); 
-    } 
 </script> 
 
 <?php 
