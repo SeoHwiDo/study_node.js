@@ -8,8 +8,8 @@
 </head>
 <body>
 <?php
-    require 'login.php';
-    if(mysqli_num_rows($result)==1) {  
+    
+    if(isset($_SESSION['userid'])) {  
 ?>
 <script type="text/javascript"> 
     function infoPrint(){ 
