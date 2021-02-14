@@ -12,21 +12,15 @@
     
     if(isset($_SESSION['userid'])) {  
 ?>
-<script type="text/javascript"> 
+<script> 
     function infoPrint(){ 
-        document.getElementById("userID").innerHTML="<?=$row['userID']?>"; 
-        document.getElementById("age").innerHTML="<?=$row['age']?>"; 
-        document.getElementById("phone").innerHTML="<?=$row['phone']?>"; 
-        document.getElementById("permit").innerHTML="<?=$row['permit']?>"; 
+        document.write(<?=$row['userID']?>); 
+        document.write(<?=$row['age']?>   ); 
+        document.write(<?=$row['phone']?> ); 
+        document.write(<?=$row['permit']?>); 
     } 
 </script> 
-infoPrint();
-<div id='info'>
-    <div id='userID'></div>
-    <div id='age'></div>
-    <div id='phone'></div>
-    <div id='permit'></div>
-</div>
+
 <?php 
     }else{
 ?>
