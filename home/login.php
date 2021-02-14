@@ -6,7 +6,7 @@
   $logPass=$_POST['logPass'];
  
   //아이디가 있는지 검사
-  $query = "select * from member where userID='$logID'";
+  $query = "select * from userList where userID='$logID'";
   $result = $mysqli->query($query);
 
   //아이디가 있다면 비밀번호 검사
