@@ -11,15 +11,18 @@
 <?php
     
     if(isset($_SESSION['userid'])) {  
-?>
-<script>  
-        document.write(<?=$row['userID']?>); 
-        document.write(<?=$row['age']?>   ); 
-        document.write(<?=$row['phone']?> ); 
-        document.write(<?=$row['permit']?>); 
-</script> 
-
-<?php 
+        $id=$row['userID'];
+        $age=$row['age'];
+        $phone=$row['phone'];
+        $per=$row['permit'];
+        $permit[0]='권한 없음';
+        $permit[1]='일반 이용자';
+        $permit[2]='부관리자';
+        $permit[3]='관리자';
+        echo 'ID:'.$id.'\n';
+        echo '나이:'.$age.'\n';
+        echo '전화:'.$phone.'\n';
+        echo '권한:'.$permit[$per];
     }else{
 ?>
 <script>
