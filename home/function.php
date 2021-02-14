@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <script>
 function permitLink(phpfile){
 <?php
