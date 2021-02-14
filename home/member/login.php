@@ -17,7 +17,9 @@
     //비밀번호가 맞다면 세션 생성
     if($passwordResult===true){
       $_SESSION['userid']=$logID;
+      $_SESSION['permit']=$row['permit'];
       if(isset($_SESSION['userid'])){
+       
 ?>      
         <script>
           alert("로그인에 성공하였습니다.")
@@ -29,7 +31,7 @@
 ?>
         <script>
           alert("로그인에 실패하였습니다");
-          location.href = "index.html";
+          history.back();
         </script>
 <?php
       }

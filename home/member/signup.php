@@ -30,7 +30,7 @@
 	 if ($mysqli->connect_errno){
           die('Connect Error: ' . $mysqli->connect_errno);
      	 }else{
-       	   $sql = "INSERT INTO userList ( userID, pass, age, phone ) VALUES ( '$userID', '$pass', '$age', '$phone' );";
+       	   $sql = "INSERT INTO userList ( userID, permit, pass, age, phone ) VALUES ( '$userID', 0, '$pass', '$age', '$phone' );";
        	   mysqli_query( $mysqli, $sql );
            echo '<h1>Success!</h1>';
       }
