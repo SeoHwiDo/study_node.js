@@ -13,10 +13,4 @@ function permitLink(phpfile){
 <?php
 }
 ?>
-function logout(){
-<?php
-    //session_destroy();
-?>
-    location.href="index.php";
-}
 </script>

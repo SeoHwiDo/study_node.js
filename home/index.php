@@ -12,7 +12,7 @@
 <?php    
     if(isset($_SESSION['userid'])) {
 ?>
-    <button onclick="logout()">로그아웃</button>
+    <button onclick="location.href='logout.php'">로그아웃</button>
 <?php
     echo $_SESSION['userid'];
 ?>님 안녕하세요<br/>
