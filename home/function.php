@@ -1,8 +1,5 @@
 <script>
 function permitLink(phpfile,lev){
-    if(!<?= isset($_SESSION['userid']) ?>){
-        alert("로그인 후 이용하세요");
-    }else{
      if(<?= $_SESSION['permit'] ?>>=lev){
         location.href=phpfile;
     }else{
@@ -10,14 +7,10 @@ function permitLink(phpfile,lev){
         location.href='index.php';
         }
     }
-}
+
 
 function logout(){
-    
-<?php
-    session_start();
-    session_destroy();
-?>
+    location.href='logout.php';
 
     alert("로그아웃되었습니다.");
 }
