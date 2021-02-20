@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <script>
 function permitLink(phpfile,lev){
      if(<?= $_SESSION['permit'] ?>>=lev){

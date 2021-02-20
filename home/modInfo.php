@@ -3,8 +3,8 @@
 
 <head>
 <?php 
-session_start();
-require 'hostinfo.php' 
+require 'function.php';
+require 'hostinfo.php';
 ?>
   <meta charset="utf-8">
   <title></title>

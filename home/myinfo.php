@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php session_start(); 
-    
+    <?php 
+    require 'function.php';
     require 'hostinfo.php';
     $uid = $_SESSION['userid'];
     $query = "select * from userList where userID='$uid'";
