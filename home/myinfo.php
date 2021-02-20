@@ -21,6 +21,7 @@
         $age=$row['age'];
         $phone=$row['phone'];
         $per=$row['permit'];
+        $mail=$row['mail'];
         $permit[0]='권한 없음';
         $permit[1]='일반 이용자';
         $permit[2]='부관리자';
@@ -29,12 +30,9 @@
         echo '나이:'.$age.'<br>';
         echo '전화:'.$phone.'<br>';
         echo '권한:'.$permit[$per].'<br>';
-    }else{
+        echo '메일:'.$mail.'<br>';
 ?>
-<script>
-alert('로그인 후 확인');
-history.back();
-</script>
+        <button onclick="modInfo()">정보 수정</button>
 <?php
     }
 ?>

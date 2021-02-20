@@ -18,6 +18,7 @@
     if($passwordResult===true){
       $_SESSION['userid']=$logID;
       $_SESSION['permit']=$row['permit'];
+      $_SESSION['mail']=$row['mail'];
       if(isset($_SESSION['userid'])){
        
 ?>      

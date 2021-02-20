@@ -12,16 +12,22 @@
 <?php    
     if(isset($_SESSION['userid'])) {
 ?>
-    <button onclick="location.href='logout.php'">로그아웃</button>
-<?php
-    echo $_SESSION['userid'];
-?>님 안녕하세요<br/>
-<?php 
-    if($_SESSION['permit']==0){ 
-?>
         <button onclick="location.href='logout.php'">로그아웃</button>
 <?php
-    }
+        echo $_SESSION['userid'];
+?>      님 안녕하세요<br/>
+<?php 
+        if(!isset($_SESSION['mail'])){
+?>
+            <script>alert("'내정보'들어가서 '정보수정' 통해서 메일 정보 기입 바람")</script>
+<?php
+        }else{
+            if($_SESSION['permit']==0){ 
+?>
+            <button onclick="rqPermit()">권한 요청</button>
+<?php
+            }
+        }
 ?>
     
 <?php
