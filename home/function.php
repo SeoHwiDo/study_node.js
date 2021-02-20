@@ -1,6 +1,6 @@
 <script>
 function permitLink(phpfile,lev){
-    if(<?= !isset($_SESSION['userid']) ?>==1){
+    if(!<?= isset($_SESSION['userid']) ?>){
         alert("로그인 후 이용하세요");
     }else{
      if(<?= $_SESSION['permit'] ?>>=lev){
