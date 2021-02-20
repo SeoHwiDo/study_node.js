@@ -213,3 +213,32 @@ var plamemo =[
     "media/PlaMemo/12.mp4",
     "media/PlaMemo/13.mp4"]
 ];
+
+var toradora =[
+    [
+    "media/toradora/01.mp4",
+    "media/toradora/02.mp4",
+    "media/toradora/03.mp4",
+    "media/toradora/04.mp4",
+    "media/toradora/05.mp4",
+    "media/toradora/06.mp4",
+    "media/toradora/07.mp4",
+    "media/toradora/08.mp4",
+    "media/toradora/09.mp4",
+    "media/toradora/10.mp4",
+    "media/toradora/11.mp4",
+    "media/toradora/12.mp4",
+    "media/toradora/13.mp4",
+    "media/toradora/14.mp4",
+    "media/toradora/15.mp4",
+    "media/toradora/16.mp4",
+    "media/toradora/17.mp4",
+    "media/toradora/18.mp4",
+    "media/toradora/19.mp4",
+    "media/toradora/20.mp4",
+    "media/toradora/21.mp4",
+    "media/toradora/22.mp4",
+    "media/toradora/23.mp4",
+    "media/toradora/24.mp4",
+    "media/toradora/25.mp4"]
+];
