@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <script>
 function permitLink(phpfile){
 <?php
@@ -14,4 +13,10 @@ function permitLink(phpfile){
 <?php
 }
 ?>
+function logout(){
+<?php
+    //session_destroy();
+?>
+    location.href="index.php";
+}
 </script>

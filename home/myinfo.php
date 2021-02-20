@@ -4,7 +4,8 @@
     <?php session_start(); 
     
     require 'hostinfo.php';
-    $query = "select * from userList";
+    $uid = $_SESSION['userid'];
+    $query = "select * from userList where userID='$uid'";
     $result = $mysqli->query($query);
     $row=mysqli_fetch_assoc($result);?>
     <meta charset="UTF-8">
