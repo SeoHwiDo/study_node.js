@@ -1,7 +1,9 @@
 <script>
-function permitLink(phpfile){
+function permitLink(phpfile,lev){
+
 <?php
-    if($_SESSION['permit']>=1){
+    $lev = '<script>lev</script>'; 
+    if($_SESSION['permit']>=$lev){
 ?>
         location.href=phpfile;
     }

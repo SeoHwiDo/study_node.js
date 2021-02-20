@@ -31,9 +31,9 @@
     </center>
 </div>
 <div id='navigate'>
-    <button onclick="permitLink('myinfo.php')">내정보</button>
-    <button onclick="permitLink('media_page/media_index.html')">영상</button>
-    <button onclick="permitLink('board.php')">게시판</button>
-    <button onclick="permitLink('Game/game_index.php')">게임</button>
+    <button onclick="permitLink('myinfo.php',0)">내정보</button>
+    <button onclick="permitLink('media_page/media_index.html',1)">영상</button>
+    <button onclick="permitLink('board.php',1)">게시판</button>
+    <button onclick="permitLink('Game/game_index.php',1)">게임</button>
 </body>
 </html>
