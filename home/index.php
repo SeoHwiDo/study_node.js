@@ -16,6 +16,14 @@
 <?php
     echo $_SESSION['userid'];
 ?>님 안녕하세요<br/>
+<?php 
+    if($_SESSION['permit']==0){ 
+?>
+        <button onclick="location.href='logout.php'">로그아웃</button>
+<?php
+    }
+?>
+    
 <?php
     }
     else {

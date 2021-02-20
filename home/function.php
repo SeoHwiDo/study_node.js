@@ -8,4 +8,13 @@ function permitLink(phpfile,lev){
         location.href='index.php';
         }
 }
+
+function logout(){
+    
+<?php
+    session_start();
+    session_destroy();
+?>
+    alert("로그아웃되었습니다.");
+}
 </script>

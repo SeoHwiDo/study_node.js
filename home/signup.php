@@ -16,6 +16,7 @@
       $pass = $_POST[ 'pass' ];
       $age = $_POST[ 'age' ];
       $phone = $_POST[ 'phone' ];
+      $mail = $_POST[ 'mail' ];
       $oriPass = $_POST[ 'pass' ];
       $pass=password_hash ( $oriPass , PASSWORD_DEFAULT );
       
@@ -27,7 +28,7 @@
 	 if ($mysqli->connect_errno){
           die('Connect Error: ' . $mysqli->connect_errno);
      	 }else{
-       	   $sql = "INSERT INTO userList ( userID, permit, pass, age, phone ) VALUES ( '$userID', 0, '$pass', '$age', '$phone' );";
+       	   $sql = "INSERT INTO userList ( userID, permit, pass, age, phone, mail ) VALUES ( '$userID', 0, '$pass', '$age', '$phone', '$mail' );";
        	   mysqli_query( $mysqli, $sql );
            echo '<h1>Success!</h1>';
       }
